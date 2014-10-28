@@ -1,6 +1,4 @@
 module Main where
 
 
-main = do
-
-  
+main = putStrLn "Work In Progres"
