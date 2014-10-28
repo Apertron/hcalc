@@ -1,3 +1,0 @@
-module HCalc.Internal
-    (
-    ) where
