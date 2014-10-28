@@ -1,23 +1,22 @@
 name:                hcalc
 version:             0.1.0.0
 synopsis:            An advanced calculator for desktop use in Haskell.
--- description:         
 homepage:            http://apertron.net
 license:             MIT
 license-file:        LICENSE
 author:              Zack Piper
 maintainer:          zack@apertron.net
--- copyright:           
 category:            Calculation
 build-type:          Simple
 extra-source-files:  README.md
 cabal-version:       >=1.10
 
 executable hcalc
-  HS-Source-Dirs: src
-  main-is:             Main.hs
-  -- other-modules:       
-  -- other-extensions:    
+  -- needed for VTY
+  ghc-options:       -threaded
+  HS-Source-Dirs:    src
+  main-is:           Main.hs
   build-depends:       base >=4.7 && <4.8,
-                       vty
+                       vty,
+                       data-default
   default-language:    Haskell2010
